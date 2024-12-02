@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from 'next/link'
-import Navbar from './components/navbar'
 import "./globals.css";
 
 const geistSans = localFont({
@@ -32,12 +31,9 @@ export default function RootLayout({
       >
         <div style={{height:'100px', background:'red'}}>
           <div>
+            <Link href="/">Home </Link>
             <Link href="/portfolio">portfolio</Link>
-        <Link href="/dashboard/analytics">Analytics</Link>
-        <Link href="/dashboard/settings/password">Password</Link>
-        <Link href="/dashboard/settings/profile">Profile</Link>
         </div>
-        <Navbar/>
         </div>
         
         {children}
