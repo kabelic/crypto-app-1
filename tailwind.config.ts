@@ -11,6 +11,7 @@ export default {
       colors: {
         bgColor: 'rgba(19, 18, 26, 1)',
         headerBgColor:'rgba(30, 25, 50, 1)',
+        searchBgColor: 'rgba(25, 25, 37, 1)',
         // bgColor: 'red',
         // background: "var(--background)",
         // foreground: "var(--foreground)",
