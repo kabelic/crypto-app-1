@@ -1,7 +1,9 @@
 
 import CoinHeader from './components/coinheader/page';
-import Logoipsm from './components/logoipsm/page';
+import HomeButton from './components/homebutton/page';
+import PortfolioButton from './components/portfoliobutton/page';
 import SearchInput from './components/searchInput/page';
+import LogoipsmButton from './components/logoipsmbutton/page copy';
 import './globals.css'
 
 
@@ -40,7 +42,7 @@ number={'622'}
             <CoinHeader logo={<svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.00065 0.333008L0.667318 3.66634L7.33398 3.66634L4.00065 0.333008Z" fill="#01F1E3"/>
 </svg>
-} number={'1.69T'}/>
+} number={'1.69T'} text={''}/>
             <CoinHeader logo={'$'} text={'124.45B'} number={''}/>
             <CoinHeader logo={<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_587_8852)">
@@ -74,30 +76,11 @@ number={'622'}
         </div>
         </div>
         <div className='mx-20 my-4 flex flex-row justify-between'>
-          <Logoipsm logo={<svg width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_587_727)">
-<path d="M12.3431 0C10.3124 0 8.36487 0.8067 6.92893 2.24264L2.24264 6.92893C0.8067 8.36487 0 10.3124 0 12.3431C0 16.5719 3.42809 20 7.65687 20C9.6876 20 11.6351 19.1933 13.0711 17.7573L16.3126 14.5158C16.3126 14.5157 16.3127 14.5159 16.3126 14.5158L25.7573 5.07107C26.4431 4.38527 27.3733 4 28.3431 4C29.9669 4 31.3435 5.05827 31.8207 6.52271L34.8015 3.54197C33.4417 1.41223 31.0573 0 28.3431 0C26.3124 0 24.3649 0.8067 22.9289 2.24264L10.2427 14.9289C9.55687 15.6147 8.62673 16 7.65687 16C5.63723 16 4 14.3628 4 12.3431C4 11.3733 4.38527 10.4431 5.07107 9.75733L9.75733 5.07107C10.4431 4.38527 11.3733 4 12.3431 4C13.9669 4 15.3435 5.05832 15.8207 6.52281L18.8015 3.54205C17.4417 1.41227 15.0574 0 12.3431 0Z" fill="#6161D6" />
-<path d="M10.0439 14.9289C9.35807 15.6147 8.42793 16 7.45807 16C5.83453 16 4.45807 14.942 3.98067 13.4778L1 16.4585C2.35987 18.5879 4.74406 20 7.45807 20C9.4888 20 11.4363 19.1933 12.8723 17.7573L25.5585 5.07107C26.2443 4.38527 27.1745 4 28.1443 4C30.164 4 31.8012 5.63723 31.8012 7.65687C31.8012 8.62673 31.4159 9.55687 30.7301 10.2427L26.0439 14.9289C25.3581 15.6147 24.4279 16 23.4581 16C21.8344 16 20.4579 14.9418 19.9805 13.4775L16.9999 16.4582C18.3597 18.5879 20.7439 20 23.4581 20C25.4888 20 27.4363 19.1933 28.8723 17.7573L33.5585 13.0711C34.9945 11.6351 35.8012 9.6876 35.8012 7.65687C35.8012 3.42809 32.3731 0 28.1443 0C26.1136 0 24.1661 0.8067 22.7301 2.24264L10.0439 14.9289Z" fill="#6161D6" />
-</g>
-<defs>
-<clipPath id="clip0_587_727">
-<rect width="36" height="20" fill="white"/>
-</clipPath>
-</defs>
-</svg>} text={'Logoipsm'}/>
+          <LogoipsmButton/>
           <div className='flex flex-row mx-40'>
-            <Logoipsm logo={<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.5402 6.81969L14.7802 2.78969C13.2102 1.68969 10.8002 1.74969 9.29023 2.91969L4.28023 6.82969C3.28023 7.60969 2.49023 9.20969 2.49023 10.4697V17.3697C2.49023 19.9197 4.56023 21.9997 7.11023 21.9997H17.8902C20.4402 21.9997 22.5102 19.9297 22.5102 17.3797V10.5997C22.5102 9.24969 21.6402 7.58969 20.5402 6.81969ZM13.2502 17.9997C13.2502 18.4097 12.9102 18.7497 12.5002 18.7497C12.0902 18.7497 11.7502 18.4097 11.7502 17.9997V14.9997C11.7502 14.5897 12.0902 14.2497 12.5002 14.2497C12.9102 14.2497 13.2502 14.5897 13.2502 14.9997V17.9997Z" fill="white"/>
-</svg>
-
-
-} text={'Home'}/>
-<Logoipsm 
-logo={<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19.5 11L10.5 17L1.5 11M19.5 15L10.5 21L1.5 15M19.5 7L10.5 13L1.5 7L10.5 1L19.5 7Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-} 
-text={'Portfolio'}/></div>
+            <HomeButton/>
+            <PortfolioButton/>
+          </div>
           <SearchInput/>
         
         </div>

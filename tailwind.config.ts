@@ -12,6 +12,8 @@ export default {
         bgColor: 'rgba(19, 18, 26, 1)',
         headerBgColor:'rgba(30, 25, 50, 1)',
         searchBgColor: 'rgba(25, 25, 37, 1)',
+        coinbttnBgColor: 'rgba(97, 97, 214, 0.5)',
+        convertbttnBgColor: 'rgba(35, 35, 54, 1)',
         // bgColor: 'red',
         // background: "var(--background)",
         // foreground: "var(--foreground)",
