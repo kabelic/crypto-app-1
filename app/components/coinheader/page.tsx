@@ -1,5 +1,4 @@
 
-
 const CoinHeader = ({logo, text, number}) => {
     return(
         <div className="flex flex-row justify-center items-center mx-2 text-xs">
