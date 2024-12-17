@@ -16,10 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const progressBar = 
-<div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
-  <div className="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" fill-rule="width: 45%"></div>
-</div>
+
 
   return (
     <html lang="en">
@@ -43,7 +40,12 @@ number={'622'}
 <path d="M4.00065 0.333008L0.667318 3.66634L7.33398 3.66634L4.00065 0.333008Z" fill="#01F1E3"/>
 </svg>
 } number={'1.69T'} text={''}/>
-            <CoinHeader logo={'$'} text={'124.45B'} number={''}/>
+            <CoinHeader logo={'$'} text={'124.45B'} number={<div className="h-2 w-20 bg-progressbarBgColor rounded-md ">
+  <div
+    className="h-2 bg-white"
+    style={{width:'20%'}}
+  ></div>
+</div>}/>
             <CoinHeader logo={<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_587_8852)">
 <path d="M24 12C24 14.3734 23.2962 16.6935 21.9776 18.6668C20.6591 20.6402 18.7849 22.1783 16.5922 23.0866C14.3995 23.9948 11.9867 24.2324 9.65892 23.7694C7.33115 23.3064 5.19295 22.1635 3.51472 20.4853C1.83649 18.8071 0.693605 16.6689 0.230582 14.3411C-0.232441 12.0133 0.00519936 9.60051 0.913451 7.4078C1.8217 5.21509 3.35977 3.34094 5.33316 2.02236C7.30655 0.703788 9.62663 0 12 0C15.1826 0 18.2348 1.26428 20.4853 3.51472C22.7357 5.76516 24 8.8174 24 12Z" fill="#F7931A" />
@@ -55,7 +57,12 @@ number={'622'}
 </clipPath>
 </defs>
 </svg>
-} text={'45%'} number={'7884'}/>
+} text={'45%'} number={<div className="h-2 w-20 bg-progressbarBgColor rounded-md ">
+  <div
+  className="h-2 bg-bitcoinBgColor"
+    style={{width:'45%'}}
+  ></div>
+</div>}/>
             <CoinHeader logo={<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0_587_8855)">
       <circle cx="8" cy="8" r="8" fill="#627EEA"/>
@@ -72,7 +79,12 @@ number={'622'}
 </clipPath>
 </defs>
 </svg>
-} text={'21%'} number={progressBar}/>
+} text={'21%'} number={<div className="h-2 w-20 bg-progressbarBgColor rounded-md ">
+  <div
+    className="h-2 bg-coinbttnBgColor"
+    style={{width: '21%'}}
+  ></div>
+</div>}/>
         </div>
         </div>
         <div className='mx-20 my-4 flex flex-row justify-between'>

@@ -22,7 +22,7 @@ const CoinBoxRow = () => {
 </svg>
 </div>
             <div className='ml-3'>
-                <div>title</div>
+                <div>title (BTC)</div>
                 <div className='flex flex-row'>
                     <div>price</div>
                     <div className="flex flex-row justify-center items-center">

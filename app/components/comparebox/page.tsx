@@ -2,7 +2,7 @@ import '../../globals.css';
 
 const CompareBox = () => {
     return(
-        <div className="flex flex-row justify-between items-center mb-5 ">
+        <div className="flex flex-row justify-between items-center mb-5 text-xs">
             <div>Select the currency to view statistics</div>
             <div className="flex flex-row justify-between bg-convertbttnBgColor px-7 py-2 rounded-md">
                 <div><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
