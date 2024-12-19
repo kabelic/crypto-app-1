@@ -5,9 +5,12 @@ import DayMonthYear from "../components/daymonthyear/page";
 import CoinsListBox from "../components/coinslistbox/page";
 import { AreaChartComponent } from "../components/linechart/page";
 import { BarChartComponent } from "../components/barchart/page";
+import { useSelector } from "react-redux";
 
 const Page = () => {
+    // const  counter = useSelector((state:any) => state.counter)
     return(
+        // <Provider store={store}>
         <div className="mx-20 pb-4">
             <Coin_convertor/>
             <CompareBox/>
@@ -20,7 +23,7 @@ const Page = () => {
             <AreaChartComponent/>
             <BarChartComponent/>
             </div>
-            
+            {/* {counter} */}
             <DayMonthYear/>
             <div className="flex flex-row justify-between opacity-50 text-xs">
                 <div>#</div>
@@ -35,6 +38,7 @@ const Page = () => {
             </div>
             <CoinsListBox/>
         </div>
+        // </Provider>
     )
 }
 
