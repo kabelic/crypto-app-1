@@ -1,21 +1,17 @@
 'use client'
-import StoreProvider from "./storeProvider";
-import { useAppSelector } from "@/lib/hooks";
+import {  useDispatch, useSelector } from "react-redux";
+import { increment, decrement, incrementByAmount } from "@/redux/features/counter/counterSlice";
+import { RootState } from "@reduxjs/toolkit/query";
 
-const List = () => {
-  const todos = useAppSelector((state) => state.todos);
-  return(
-    <div className="text-bgColor">
-      {/* <h1 className="text-3xl font-bold underline bg-teal-400">This is list component..!</h1>
-      {todos.map((todo) => <li key={todo.id}>{todo.value}</li>)} */}
-    </div>
-  )
-}
 
 export default function Home() {
+  const count = useSelector((state: RootState) => state.counter.value)
+  const dispatch = useDispatch();
   return (
-    <StoreProvider>
-    <List/>
-    </StoreProvider>
+    <div >
+      <button onClick={() =>  dispatch(increment())}>Increment</button><br/>
+      <span>{count}</span><br/>
+      <button onClick={() =>  dispatch(decrement())}>Decrement</button>
+    </div>
   );
 }

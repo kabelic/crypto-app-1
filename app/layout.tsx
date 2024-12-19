@@ -4,6 +4,7 @@ import HomeButton from './components/homebutton/page';
 import PortfolioButton from './components/portfoliobutton/page';
 import SearchInput from './components/searchInput/page';
 import LogoipsmButton from './components/logoipsmbutton/page copy';
+import { Providers } from '@/redux/provider';
 import './globals.css'
 
 
@@ -96,8 +97,9 @@ number={'622'}
           <SearchInput/>
         
         </div>
-        
+        <Providers>
         {children}
+        </Providers>
         
       </body>
     </html>
