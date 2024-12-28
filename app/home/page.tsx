@@ -27,16 +27,13 @@ const Page = () => {
     <div className="mx-20 pb-4">
       <Coin_convertor />
       <CompareBox />
-      <div className="flex flex-row mb-5">
-        <CoinBoxRow />
-        <CoinBoxRow />
-        <CoinBoxRow />
+      <div className="mb-5">
+        <CoinBoxRow data={records} />
       </div>
       <div className="flex flex-row mb-5">
         <AreaChartComponent />
         <BarChartComponent />
       </div>
-      {/* {counter} */}
       <DayMonthYear />
       <div className="flex flex-row justify-between opacity-50 text-xs">
         <div>#</div>
