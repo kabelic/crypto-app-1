@@ -241,7 +241,6 @@ export function AreaChartComponent() {
               stroke="rgba(116, 116, 242, 0.6)"
               stackId="a"
             />
-            <ChartLegend content={<ChartLegendContent />} />
           </AreaChart>
         </ChartContainer>
       </CardContent>
